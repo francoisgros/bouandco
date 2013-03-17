@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>BouAndCo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="chromeframe">Vous utilisez un navigateur <strong>obsolète</strong>. Veuillez <a href="http://browsehappy.com/">mettre à jour votre navigateur</a> ou <a href="http://www.google.com/chromeframe/?redirect=true">activer Google Chrome Frame</a> pour améliorer votre expérience.</p>
+<![endif]-->
+
+<!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="index.html">BouAndCo</a>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">A propos</a></li>
+                    <li><a href="missions3.php">Guerre</a></li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Conseils <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-header">Développement</li>
+                            <li><a href="conseils.html#ts">Les terres sauvages</a></li>
+                            <li><a href="conseils.html#heros">Les héros</a></li>
+                            <li><a href="conseils.html#ressources">Les ressources</a></li>
+                            <li><a href="conseils.html#banquiers">Les banquiers</a></li>
+                            <li><a href="conseils.html#armees">Les armées</a></li>
+                            <li><a href="conseils.html#casernes">Les casernes</a></li>
+                            <li><a href="conseils.html#2villes">Gestion de 2 villes</a></li>
+                            <li class="divider"></li>
+                            <li class="nav-header">Combat</li>
+                            <li><a href="conseils.html#troupes">Les troupes</a></li>
+                            <li><a href="conseils.html#rapports">Les rapports</a></li>
+                            <li><a href="conseils.html#frigos">Les frigos</a></li>
+                            <li><a href="conseils.html#attaquer">L'art de l'attaque</a></li>
+                            <li><a href="conseils.html#sabliers">Les sabliers</a></li>
+                            <li class="divider"></li>
+                            <li class="nav-header">Fonctionnement</li>
+                            <li><a href="conseils.html#demandes">Les demandes</a></li>
+                            <li><a href="conseils.html#quitter">Quitter l'alliance</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form pull-right" method="post" action="#">
+                    <input class="span2" type="text" placeholder="Nom">
+                    <input class="span2" type="text" placeholder="Mot de passe">
+                    <button type="submit" class="btn">Se connecter</button>
+                </form>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="page-header">
+        <h1>Conseils de nos sages</h1>
+    </div>
+    <p>D'après les contributions d'Harstorm, Gary'mli, Groputerrum et autres sages de l'alliance. N'hésitez pas à envoyer vos conseils par message général. Ils seront ajoutés ici au fur et à mesure.</p>
+
+    <div class="page-header">
+        <h2>Développement</h2>
+    </div>
+
+    <h3 id="ts">Les terres sauvages</h3>
+    <p>En fonction du niveau de votre donjon, vous pouvez contrôler jusqu'à 9 terres sauvages (TS). Elles vous apportent des bonus de production sur vos ressources. Par exemple, une TS lvl9 prairie, c'est 45% de bonus sur votre production de base de nourriture.</p>
+    <p>Bonus = 5% x niveau de la TS</p>
+    <p>Compte tenu du fait que nous avons des stocks énormes de nourriture, il serait intéressant que vous ayez aussi des TS qui ne soient pas que pour la nourriture&nbsp;:</p>
+    <ul>
+        <li>Prairie / Lac pour la nourriture</li>
+        <li>Montagne pour le minerai</li>
+        <li>Forêt pour le bois</li>
+        <li>Colline pour la pierre</li>
+    </ul>
+    <p>Vous pouvez voir (et abandonner) vos TS en allant sur le donjon de votre ville, onglet "Conquêtes". Pour conquérir une nouvelle TS, assurez-vous au préalable de ne pas avoir atteint votre limite. Si c'est le cas, vous devrez abandonner une TS avant d'attaquer - faute de quoi vous n'ajouterez pas la TS vaincue à vos conquêtes et vous aurez perdu des troupes pour rien...</p>
+    <p><a class="btn" href="#"><i class="icon-chevron-up"></i></a></p>
+
+    <h3 id="heros">Les héros</h3>
+    <p>Ils jouent un rôle important. Tout d'abord, dans la grande salle, vous pouvez affecter 4 héros à des fonctions. On a tendance à mettre le héros qui a le plus haut niveau sur la production parce qu'il rapporte 1% de bonus par niveau sur votre production de base. Par exemple, un héros niveau 40, c'est 40% de plus pour la production de toutes les ressources (sauf l'or).</p>
+    <p>Un autre héros est important pour l'entrainement. En effet, c'est ce héros qui va servir si vous êtes attaqué.</p>
+    <p>Enfin, lorsque vous attaquez un ennemi, prenez votre héros de niveau le plus élevé car il vous donne un bonus sur l'attaque en fonction de son niveau.</p>
+    <p>Il est préférable de monter très haut un héros plutôt que plusieurs de niveaux plus faibles. Chaque attaque apporte 20 points d'expérience à votre héros.</p>
+    <p><span class="label label-info">Astuce&nbsp;!</span> Il n'est pas nécessaire de placer un héros dans chaque fonction (production, entrainement, recherche, construction). Il vous suffit d'avoir votre meilleur héros sur la production (car cela influe sur la prod en permanence) et de placer celui-ci au moment de votre recherche sur la partie recherche, car sur tous les autres domaines le héros ne joue un rôle qu'au lancement de l'action. Ainsi, vous profiterez du bonus de votre meilleur héros pour chaque réalisation (recherche, construction, entrainement), tout en augmentant au maximum votre prod le reste du temps. N'oubliez pas bien sûr d'assigner de nouveau votre meilleur héros à la prod une fois l'action lancée. Bila&nbsp;: un seul héros assigné et il rend tout plus efficace, tout en consommant moins d'or (un seul salaire).</p>
+    <p><a class="btn" href="#"><i class="icon-chevron-up"></i></a></p>
+
+    <h3 id="ressources">Les ressources</h3>
+    <p>Chaque jour, vous produisez des ressources et vous en récupérez de vos attaques. Cela ne sert à rien de les garder si vous ne pouvez pas les protéger. Avec beaucoup de ressources sans protection, vous devenez des cibles permanentes&nbsp;; alors que si vos ressources sont toujours en dessous de votre niveau de protection, la plupart des pilleurs ne viendront plus. Donc transférez vos ressources aux banques et allez sur le chat pour en récupérer quand vous voulez.</p>
+    <p>Pour protéger vos ressources, il y a 3 choses à faire&nbsp;:</p>
+    <ul>
+        <li>Tout d'abord, monter le plus possible le niveau de l'entrepôt.</li>
+        <li>Ensuite, développer au max la recherche Coffre blindé.</li>
+        <li>Et enfin, petit à petit, monter le niveau du mur qui empêche à un certain niveau que des charrettes avec des troupes lvl1 puissent rentrer vous piquer des ressources.</li>
+    </ul>
+    <p><a class="btn" href="#"><i class="icon-chevron-up"></i></a></p>
+
+    <h3 id="banquiers">Les banquiers</h3>
+    <p>Vous avez à disposition plusieurs banquiers qui seront ravis de recevoir vos dons et qui se feront un plaisir de répondre à vos demandes de ressources. Si vous n'avez pas leurs coordonnées, demandez-les sur le chat, il y a forcément quelq'un qui vous les donnera. Vous pouvez aussi les demander par mail à un officier. Pour des raisons évidentes de sécurité, les coo des banquiers ne sont pas diffusées sur ce site.</p>
+    <p>Les banques font régulièrement des demandes à 1 de ressources sur le chat pour faciliter le dépôt de vos ressources en excès (celles qui dépassent la limite de protection de votre entrepôt) et de votre or (qui n'est jamais protégé). Répondez-y en fixant vous-mêmes la bonne quantité à envoyer de chaque ressource. L'usage des banques est essentiel pour protéger vos ressources et vous éviter d'être pris pour un frigo.</p>
+    <p><a class="btn" href="#"><i class="icon-chevron-up"></i></a></p>
+
+    <h3 id="armees">Les armées</h3>
+    <p>A un certain moment, vous ne pourrez pas produire autant de nourriture que ce que votre armée consomme. Le fait d'être dans le rouge pour la nourriture n'a aucune incidence sur vos troupes. Vous n'avez plus de nourriture pour en construire de nouvelles et il n'est pas possible de lancer des recherches ou des constructions sans nourriture. Mais ce n'est pas grave car dès que vous recevrez de la nourriture (par ex. en demandant à une banque), vous pourrez l'utiliser tout de suite pour faire de nouvelles troupes et le reste. Donc n'hésitez pas à aller dans le rouge pour la nourriture et produisez des armées dans vos 10 casernes.</p>
+    <p><a class="btn" href="#"><i class="icon-chevron-up"></i></a></p>
+
+    <h3 id="casernes">Les casernes</h3>
+    <p>Le nombre de casernes influence directement la vitesse de production des troupes. Voici quelques éléments pour comprendre... Mettons que je souhaite produire 135 nains/elfes montés.</p>
+    <ul>
+        <li>Si j'ai 1 caserne, il faut 1h38.</li>
+        <li>Si j'ai 5 casernes, il faut 20 min.</li>
+        <li>Si j'ai 10 casernes, il faut 10 min.</li>
+        <li>Si j'ai 15 casernes, il faut 6 min 44s.</li>
+    </ul>
+    <p>Je pense que c'est clair. Toutes les casernes sont niveau 1, il n'y a que le nombre qui change.</p>
+    <p>La vitesse de production des troupes sera également plus importante si vous avez 15 casernes niveau 9 plutôt que 15 casernes niveau 1. N'oubliez pas que le héros qui a le plus haut niveau doit être affecté à l'entrainement quand vous lancez des troupes en production (vous pouvez ensuite le déplacer sur la production des ressources).</p>
+    <p><a class="btn" href="#"><i class="icon-chevron-up"></i></a></p>
+
+    <h3 id="2villes">Gestion de 2 villes</h3>
+    <p>Certains ont cette chance ;-)</p>
+    <p><strong>Ville 1</strong>&nbsp;: construire uniquement des fermes ou presque, ce qui vous permettra de produire de la nourriture en quantité importante pour alimenter vos troupes. Entre 11 et 15 casernes pour vos troupes. Vous produisez des troupes dans la ville 1 que vous réaffectez quand elles sont prêtes. Pour réaffecter des troupes, vous pouvez aller sur lieu de rassemblement et choisir troupes marche en bas de l'écran. Là, vous pouvez rentrer les coordonnées de votre ville 2 et choisir réaffecter pour que vos troupes se déplacent dans la ville 2. De cette façon, la consommation de nourriture se fera sur votre ville 2.</p>
+    <p><strong>Ville 2</strong>&nbsp;: 1 ferme et le reste que de la production de bois, de pierre et de minerai. Entre 11 et 15 casernes pour vos troupes. Les troupes seront produites aussi dans la ville 2. Cela permet de doubler la production de vos troupes. C'est dans cette ville que vous aurez le plus de troupes, mais vous pouvez les réaffecter quand vous le voulez.</p>
+    <p>Pour construire la ville 2, il faut une plaine. Choisissez un emplacement qui n'est pas juste à côté de la première ville car sinon, si on vous attaque une ville, on pourrait facilement attaquer l'autre. Pour le choix de la plaine, vous pouvez prendre un niveau 1, cela n'influence pas le développement de votre ville.</p>
+    <p><a class="btn" href="#"><i class="icon-chevron-up"></i></a></p>
+
+
+    <div class="page-header">
+        <h2>Combat</h2>
+    </div>
+
+    <h3 id="troupes">Les troupes</h3>
+    <p>Il est primordial d'avoir des troupes lvl1 (t1) en grand nombre. Tout d'abord, c'est plus rapide à produire. Deuxièmement, ce sont les troupes qui attaquent en premier et qui vous permettent ainsi de protéger les t2 et t3. Ensuite, les ennemis vous attaquent souvent avec uniquement des t2 et des t3, pensant qu'ils vont vous écraser&nbsp;; mais si vous avez beaucoup de t1, leurs troupes vont se faire battre par vos t1 (faciles à refaire rapidement).</p>
+    <p>En résumé&nbsp;: masse de t1, pas mal de t2, et ensuite des t3.</p>
+    <p>Dans ce jeu, les troupes qui attaquent sont beaucoup plus fortes que les défenses. Donc, on le rappelle, il faut construire un peu de défense dans vos murs - mais pas beaucoup - et par contre remplir vos casernes avec des troupes. Même si vous augmentez très vite votre puipui avec la défense, vous allez vous faire défoncer en un rien de temps par une armée bien construite.</p>
+    <p><a class="btn" href="#"><i class="icon-chevron-up"></i></a></p>
+
+    <h3 id="rapports">Les rapports</h3>
+    <p>Vous pouvez consulter les rapports d'activités de notre alliance en allant sur Alliance, puis Mur, et enfin Rapports. Les rapports entrants traduisent toutes les attaques de nos ennemis sur les membres de BouAndCo. Allez voir les rapports régulièrement, c'est intéressant.</p>
+    <p><a class="btn" href="#"><i class="icon-chevron-up"></i></a></p>
+
+    <h3 id="frigos">Les frigos</h3>
+    <p>On appelle frigo une ville qui possède des ressources que vous allez visiter chaque jour (plusieurs fois par jour, c'est aussi possible&nbsp;!). L'avantage est que vous récupérez vite des ressources que vous utilisez pour vos troupes et le reste. Pour choisir un frigo, prendre une ville de joueur niveau 10 ou plus. Si cette ville a 0 de puissance, pas de souci, vous pouvez y aller avec vos chariots et quelques t2 pour être certain de passer les murs. Vous pouvez choisir des villes avec de la puipui (si possible plus faible que vous) pour avoir plus de chances de trouver beaucoup de ressources, mais attention aux représailles... Bonne chasse&nbsp;!</p>
+    <p><span class="label label-info">Astuce&nbsp;!</span> Enregistrez dans vos signets les coo de vos meilleurs frigos pour les retrouver rapidement.</p>
+    <p><a class="btn" href="#"><i class="icon-chevron-up"></i></a></p>
+
+    <h3 id="attaquer">L'art de l'attaque</h3>
+    <p>Pour attaquer correctement&nbsp;:</p>
+    <ol>
+        <li>Tout d'abord, un éclairage - cela vous donne le niveau des ressources à piller et le détail des défenses, mais cela indique aussi à votre adversaire que vous allez venir. Pensez à monter le niveau de votre éclairage dans les recherches pour avoir des informations très précises.</li>
+        <li>Vous pouvez aussi lancer une charrette pour voir s'il a sorti son armée, ce que l'éclairage ne permet pas de savoir. Du coup, l’éclairage n'est pas forcément nécessaire, sauf si vous voulez savoir s'il y a des ressources à piller. Attaquez avec votre héros le plus faible et seulement une charrette - cela vous permet de faire gagner des points d'expérience à ce faible héros.</li>
+        <li>Ensuite, si vous êtes sûr, attaquez avec le meilleur héros et vos troupes - normalement, c'est pactole et fierté&nbsp;!</li>
+    </ol>
+    <p><a class="btn" href="#"><i class="icon-chevron-up"></i></a></p>
+
+    <h3 id="sabliers">Les sabliers</h3>
+    <p>Vous avez tous gagné - soit à la chance de Gollum, soit dans vos coffres - des sabliers de différentes durées. Il est important de les garder car, en temps de guerre, ils sont très utiles pour arriver plus vite sur vos cibles. Donc stockez-les pour le jour J.</p>
+    <p>Ils sont très simples à utiliser&nbsp;: il suffit de cliquer sur l'onglet "Accélérer" à droite de l'onglet où on voit le temps restant de la marche, et de choisir le sablier que vous voulez utiliser.</p>
+    <p>Les sabliers servent également à accélérer les constructions et les recherches, mais ils sont inutiles quand la construction ou la recherche dure plus de quelques heures...</p>
+    <p><strong>Durées des sabliers</strong> : 1 min, 15 min, 1h, 2h30, 8h, 15h, 24h.</p>
+    <p><a class="btn" href="#"><i class="icon-chevron-up"></i></a></p>
+
+
+    <div class="page-header">
+        <h2>Fonctionnement</h2>
+    </div>
+
+    <h3 id="demandes">Les demandes</h3>
+    <p>L'ambiance de notre alliance fait notre force, ainsi que les échanges de ressources entre nous et avec les banques. Mais depuis quelques jours, certains pensent que les banques ou leurs frères d'armes sont des frigos... Même si vous êtes pressé ou que vous faites un passage éclair, rien ne vous empêche de dire bonjour lorsque vous demandez des ressources - pour le respect de chacun. Et pour ceux qui répondent à votre demande, un simple merci :-)</p>
+    <p>Les demandes de ressources s'effectuent sur le chat uniquement, pas par mail général. Les messages généraux sont réservés aux sujets importants - et non aux petits bobos.</p>
+    <p><a class="btn" href="#"><i class="icon-chevron-up"></i></a></p>
+
+    <h3 id="quitter">Quitter l'alliance</h3>
+    <p>Bien sûr, vous pouvez quitter l'alliance. Toutefois, il reste de bon alloi de prévenir le régent et les membres au préalable. Cela évite les malentendus et permet de conserver de bonnes relations avec ceux qui vous ont aidé pendant un temps à vous développer par leur soutien, leurs dons et leurs conseils.</p>
+    <p><a class="btn" href="#"><i class="icon-chevron-up"></i></a></p>
+
+    <hr>
+
+    <footer>
+        <p>&copy; BouAndCo 2013</p>
+    </footer>
+
+</div> <!-- /container -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+<script src="js/vendor/bootstrap.min.js"></script>
+
+<script src="js/main.js"></script>
+</body>
+</html>
