@@ -42,7 +42,7 @@
                 <ul class="nav">
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="about.html">A propos</a></li>
-                    <li class="active"><a href="missions3.php">Guerre</a></li>
+                    <li class="active"><a href="missions.php">Guerre</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Conseils <b class="caret"></b></a>
                         <ul class="dropdown-menu">
@@ -91,7 +91,7 @@
 
         $results = $db->query('SELECT DISTINCT membre FROM bataille3 ORDER BY UPPER(membre)');
         while ($row = $results->fetchArray()) {
-            echo '<li><a href="mission3.php?membre=' . urlencode($row['membre']) . '">' . htmlentities($row['membre']) . '</a></li>';
+            echo '<li><a href="mission.php?membre=' . urlencode($row['membre']) . '">' . htmlentities($row['membre']) . '</a></li>';
         }
 
         ?>
